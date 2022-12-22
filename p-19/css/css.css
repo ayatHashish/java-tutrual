@@ -1,0 +1,200 @@
+
+ @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+ 
+ 
+ *{
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color: #000;
+    --secoudery-color: #fff;
+
+}
+html{
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+html.dark{
+background-color: #fff;
+color: rgb(143, 140, 140);
+
+}
+
+html.dark{
+    background-color: #111;
+    color: fff;
+    }
+       
+   
+    body {
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+    /*   background-image: url(../img/green-chameleon-s9CC2SKySJM-unsplash.jpg);
+ */
+      background-position: center center;
+      background-size: cover;
+      transition: 0.4s ;
+      -webkit-transition: 0.4s ;
+      -moz-transition: 0.4s ;
+      -ms-transition: 0.4s ;
+      -o-transition: 0.4s ;
+}
+
+
+.toggle{
+    background-color: var(--secoudery-color);
+    color:#000;
+    border:0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding: 8px 12px;
+    position:absolute;
+    top: 100px;
+
+}
+
+.toggle:focus{
+    outline: none;
+}
+
+.clock-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+
+}
+
+.neddle{
+    background-color:var(--primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+}
+
+.neddle.hour{
+    transform: translate(-50%,-100%) rotate(0deg);
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
+}
+
+.neddle.minute{
+    transform: translate(-50%,-100%) rotate(0deg);
+    -webkit-transform: translate(-50%,-100%) rotate(0deg);
+    -moz-transform: translate(-50%,-100%) rotate(0deg);
+    -ms-transform: translate(-50%,-100%) rotate(0deg);
+    -o-transform: translate(-50%,-100%) rotate(0deg);
+    height: 100px;
+}
+
+.neddle.second{
+    transform: translate(-50%,-100%) rotate(0deg);
+    -webkit-transform: translate(-50%,-100%) rotate(0deg);
+    -moz-transform: translate(-50%,-100%) rotate(0deg);
+    -ms-transform: translate(-50%,-100%) rotate(0deg);
+    -o-transform: translate(-50%,-100%) rotate(0deg);
+    height: 100px;
+    background-color: red;
+}
+
+
+.center-point{
+    background-color: red;
+    width:10px;
+    height: 10px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) rotate(0deg);
+    -webkit-transform: translate(-50%,- 100%) rotate(0deg);
+    -moz-transform: translate(-50%,- 100%) rotate(0deg);
+    -ms-transform: translate(-50%,- 100%) rotate(0deg);
+    -o-transform: translate(-50%,- 100%) rotate(0deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.center-point::after{
+    background-color: var( --primary-color);
+    width:5px;
+    height: 5px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) ;
+    -webkit-transform: translate(-50%,-50%) ;
+    -moz-transform: translate(-50%,-50%) ;
+    -ms-transform: translate(-50%,-50%) ;
+    -o-transform: translate(-50%,-50%) ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.time{
+    font-size: 60px;
+}
+
+.date{
+    color:#aaa;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+
+.date .circle{
+    background-color:var(--primary-color);
+    color:var(--secoudery-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content:center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    font-size: 12px;
+}

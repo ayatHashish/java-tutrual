@@ -1,0 +1,135 @@
+
+ @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+ 
+ 
+ *{
+    box-sizing: border-box;
+}
+
+   
+    body {
+      font-family: 'Roboto', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      margin: 0;
+
+
+    }
+
+    .container{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: #333333;
+
+    }
+
+    h1{
+        font-size: 4rem;
+        color: white;
+        position: absolute;
+        left:50%;
+        top:20%;
+        transform:translateX(-50%)  ;
+        -webkit-transform:translateX(-50%)  ;
+        -moz-transform:translateX(-50%)  ;
+        -ms-transform:translateX(-50%)  ;
+        -o-transform:translateX(-50%)  ;
+        white-space: nowrap;
+}
+.btn{
+position: absolute;
+left: 50%;
+top: 40%;
+transform:translateX(-50%)  ;
+font-size: 1rem;
+color: white;
+width: 15rem;
+padding:1.5rem;
+border:#fff solid 0.2rem;
+font-weight: bold;
+display: flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+text-transform: uppercase;
+
+}
+ .btn:hover{
+        background-color:sienna ;
+    }
+
+
+ 
+
+
+body {
+  font-family: 'Zeyada', handwriting;
+}
+
+    .split{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+
+    .split.left{
+        left: 0;
+        background:url(../img/);
+        background-color:seagreen;
+    }
+    
+    .split.left::before{
+       content:"";
+       position: absolute;
+    width:100%;
+     height:100%;
+
+    }
+
+  
+    .split.right,
+    .split-left, 
+    .split.right::before,
+    .split.left::before{
+        transition: all 0.5ms ease-in-out ;
+        -webkit-transition: all 0.5ms ease-in-out ;
+        -moz-transition: all 0.5ms ease-in-out ;
+        -ms-transition: all 0.5ms ease-in-out ;
+        -o-transition: all 0.5ms ease-in-out ;
+}
+
+
+   .hover-left .left{
+    width:75%
+}
+.hover-left .right{
+    width:25%
+}
+
+.hover-right .right{
+    width:75%
+}
+.hover-right .left{
+    width:25%
+}
+
+
+    .split.right{
+        right: 0 ;
+        background:url(../img/)
+    }
+
+@media (max-width:800px) {
+    hh1{
+        font-size:2rem;
+        top:30rem
+    }
+    .btn{
+        padding: 1.2rem;
+        width: 12rem;
+    }
+    
+}

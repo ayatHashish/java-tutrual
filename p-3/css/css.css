@@ -1,0 +1,98 @@
+:root{
+    --blue-color:rgb(0, 113, 117);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+   
+    font-family: serif;
+  background-color: #333;
+  color: #fff;
+    overflow: hidden;
+    margin: 0;
+}
+ 
+.container{
+    background-color: #fafafa;
+
+    transform-origin: top left;
+    transition: transform .0.4s linear;
+    width: 100vh;
+    min-height: 100vh;
+    padding: 50px;
+    -webkit-transition: transform .0.4s li;
+    -moz-transition: transform .0.4s li;
+    -ms-transition: transform .0.4s li;
+    -o-transition: transform .0.4s li;
+}
+
+.container.show-nav{
+    transform:rotate(-20deg);
+    -webkit-transform:rotate(-20deg);
+    -moz-transform:rotate(-20deg);
+    -ms-transform:rotate(-20deg);
+    -o-transform:rotate(-20deg);
+}
+
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left:-100px;
+}
+
+.circle{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border-radius:50% ;
+    position: relative;
+    transition: transform 0.5s linear;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    -webkit-transition: transform 0.5s li;
+    -moz-transition: transform 0.5s li;
+    -ms-transition: transform 0.5s li;
+    -o-transition: transform 0.5s li;
+}
+
+.circle button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    background:transparent;
+    border:0;
+    font-size: 26px;
+    color: #fff;
+
+}
+
+.circle button:focus{
+    outline: none;
+}
+
+.circle button#open{
+    left:60%;
+
+}
+
+.circle button#close{
+  top:60%;
+  transform-origin: top left;
+  transform:rotate(90deg);
+  -webkit-transform:rotate(90deg);
+  -moz-transform:rotate(90deg);
+  -ms-transform:rotate(90deg);
+  -o-transform:rotate(90deg);
+}
+
+.content img{
+    max-width: 100%;
+    
+}

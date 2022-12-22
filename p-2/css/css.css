@@ -1,0 +1,128 @@
+
+:root{
+    --blue-color:rgb(0, 113, 117);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: #fff;
+    font-family: serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+}
+
+.project-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+}
+  .project-container::before{
+    /*   content: " "; */
+    background-color: rgb(170, 166, 166);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    z-index: -1;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.project{
+        background-color: var(--blue-color);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 4px;
+        width: 0%;
+        z-index: -1;
+        transition: 0.4s ease;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+
+
+      
+
+
+.circle{
+    background-color:rgb(145, 137, 137);
+    color:rgb(255, 255, 255);
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+    height:30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:3px solid #fff;
+    transform: translateY(-50%);
+    
+    margin: 25px 0 0 0px;
+
+} 
+
+.circle.active{
+    border-color: var(--blue-color);
+ 
+
+}
+
+
+.btn{
+    background-color: var(--blue-color);
+    border:0;
+    cursor: pointer;
+    color: #fff;
+    font-family: inherit;
+    padding: 8px 20px ;
+    border-radius:6px;
+    margin: 5px;
+    font-size: 14px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
+}
+.btn:active{
+    transform:scale(0.98);
+    -webkit-transform:scale(0.98);
+    -moz-transform:scale(0.98);
+    -ms-transform:scale(0.98);
+    -o-transform:scale(0.98);
+}
+
+.btn:focus{
+    outline:0;
+
+}
+.btn:disabled{
+    cursor: pointer;
+    background-color: #999;
+  
+}
